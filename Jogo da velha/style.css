@@ -1,38 +1,83 @@
 @charset "UTF-8";
 
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
 table {
-	margin: auto;
-	border-collapse: collapse;
-    margin-top: 50px;
-    color: black;
+  border-collapse: collapse;
+  margin-top: 2rem;
 }
 
 td {
-	width: 200px;
-	height: 200px;
-	text-align: center;
-	font-size: 60px;
-	border: 2px solid black;
-	cursor: pointer;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-size: 6rem;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+td:hover {
+  background-color: #f2f2f29f;
+}
+
+
+
 #result {
-	font-size: 30px;
-	margin-top: 20px;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #333;
 }
 
 #restart {
-	font-size: 20px;
-	margin-top: 50px;
-    margin-left: 900px;
-    text-align: center;
-    color: black;
-    
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-body> h1{
-    text-align: center;
-    margin-top: 50px;
+#restart:hover {
+  background-color: #666;
 }
 
+@media only screen and (max-width: 768px) {
+  td {
+    width: 150px;
+    height: 150px;
+    font-size: 4rem;
+  }
 
+  #result {
+    font-size: 1.5rem;
+  }
+
+  #restart {
+    font-size: 1rem;
+  }
+}
