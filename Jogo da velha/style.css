@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+table {
+	margin: auto;
+	border-collapse: collapse;
+    margin-top: 50px;
+    color: black;
+}
+
+td {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	font-size: 60px;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+#result {
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+#restart {
+	font-size: 20px;
+	margin-top: 50px;
+    margin-left: 900px;
+    text-align: center;
+    color: black;
+    
+}
+
+body> h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
